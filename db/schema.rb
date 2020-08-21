@@ -18,13 +18,13 @@ ActiveRecord::Schema.define(version: 2020_08_17_220629) do
   end
 
   create_table "flights", force: :cascade do |t|
-    t.integer "number"
+    t.string "number"
     t.string "date"
     t.string "time"
     t.string "departure"
     t.string "destination"
     t.integer "price"
-    t.string "available_seats"
+    t.string "seat_number"
   end
 
   create_table "users", force: :cascade do |t|
